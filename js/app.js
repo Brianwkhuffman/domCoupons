@@ -53,8 +53,8 @@ pandadiscount.className = 'discount';
 pandadiscount.innerHTML = 'Free T-shirt and fortune cookie with purchase!';
 let pandaprice = document.getElementsByClassName('price');
 pandaprice[0].appendChild(pandadiscount);
-//let rows = document.getElementsByClassName('block1 col-sm-4'); <- will grab the 'row blocks'
-//rows[1].appendChild(pandadiscount); <- index 1 is the second row, which panda is in
+//let rows = document.getElementsByClassName('block1 col-sm-4'); <- grabs box in a line going down
+//rows[1].appendChild(pandadiscount); <-[1] is the second row, which panda is in (index 0 would be the nabisco box)
 
 
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
@@ -69,14 +69,26 @@ stuffPrice[1].innerHTML = '10,000';
 let newBrand = document.createElement('div');
 newBrand.className = 'brand';
 newBrand.innerHTML =  'Hifiman Shangri-La';
-let socials = document.getElementsByClassName('social');
-socials[5].appendChild(newBrand);
+let headphoneBox = document.getElementsByClassName('block3 col-sm-4');
+headphoneBox[1].appendChild(newBrand);
 
 //14. Create a div element with the class of 'item' and give it a content of Electronstatic Headphones. Append this element in the headphones section. 
+let headphoneItem = document.createElement('div');
+headphoneItem.className = 'item';
+headphoneItem.innerHTML = 'Electronstatic Headphones';
+newBrand.appendChild(headphoneItem);
 
 //15. Create a div element with the class of 'price' and give it a content of $18,000. Append this element in the headphones section.
+let expensive = document.createElement('div');
+expensive.className = 'price';
+expensive.innerHTML = '$18,000';
+headphoneItem.appendChild(expensive);
 
 //16. Create a button element with the class of 'discount' and give it a content of Free Barry Manilow CD with purchase! Append this element in the headphones section.
+let discountbutton = document.createElement('button');
+discountbutton.className = 'discount';
+discountbutton.innerHTML = 'Free Barry Manilow CD with purchase!';
+expensive.appendChild(discountbutton);
 
 //17. For the Unicorn Slippers, change the contents for each element to the following: 
 //div.brand = H&M
