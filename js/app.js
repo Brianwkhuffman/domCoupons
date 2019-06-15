@@ -44,15 +44,15 @@ newbutton.innerHTML = '50% OFF Axe body soap!';
 price3.appendChild(newbutton);
 
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
-let panda = document.getElementsByClassName('item');
-panda[0].innerHTML = 'Orange Chicken';
+let stuffitem = document.getElementsByClassName('item');
+stuffitem[0].innerHTML = 'Orange Chicken';
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
 let pandadiscount = document.createElement('button');
 pandadiscount.className = 'discount';
 pandadiscount.innerHTML = 'Free T-shirt and fortune cookie with purchase!';
-let pandaprice = document.getElementsByClassName('price');
-pandaprice[0].appendChild(pandadiscount);
+let stuffprice = document.getElementsByClassName('price');
+stuffprice[0].appendChild(pandadiscount);
 //let rows = document.getElementsByClassName('block1 col-sm-4'); <- grabs box in a line going down
 //rows[1].appendChild(pandadiscount); <-[1] is the second row, which panda is in (index 0 would be the nabisco box)
 
@@ -95,18 +95,32 @@ expensive.appendChild(discountbutton);
 //div.item =  Unicorn-Head Slippers
 //div.price = $21.99
 // button.discount = Free knee-high tube socks with purchase!
+stuffBrand[3].innerHTML = 'H&M';
+stuffitem[3].innerHTML = 'Unicorn-Head Slippers';
+stuffprice[3].innerHTML = '$21.99';
+let stuffButton = document.getElementsByClassName('discount');
+stuffButton[3].innerHTML = 'Free knee-high tube socks with purchase!'
+
 
 //18. For the Doritos, change the contents for each element to the following:
 //div.brand = Frito Lay
 //div.item =  Poppin' Jalapeno Doritos
 //div.price = $7.77
 // button.discount = 33% OFF any 6 pack Budweiser or Bud Light.
+stuffBrand[4].innerHTML = 'Frito Lay';
+stuffitem[4].innerHTMl = "Poppin' Jalapeno Doritos";
+stuffprice[4].innerHTML = '$7.77';
+stuffButton[4].innerHTML = '33% OFF any 6 pack Budweiser or Bud Light';
 
 //19. For the Pug, change the contents for each element to the following:
 //div.brand = Any Dog Breeder
 //div.item =  Baby Puggy
 //div.price = Priceless
 // button.discount = No Discounts. This cutie is worth every penny!
+stuffBrand[5].innerHTML = 'Any Dog Breeder';
+stuffitem[5].innerHTMl = 'Baby Puggy';
+stuffprice[5].innerHTML = 'Priceless';
+stuffButton[5].innerHTML = 'No Discounts. This cutie is worth every penny!';
 
 //Final Boss 
 //Create your own product for the last three sections.
