@@ -26,16 +26,17 @@ let discButton = document.getElementById('discount1');
 discButton.innerHTML = 'Free fries with purchase!';
 
 //6. Create a div element with the id of 'item2' and update the content to Hendrick's Gin. Append this element to William Grand & Sons div.
-let newItem = document.createElement('div');
-newItem.id = 'item2';
-newItem.innerHTML = "Hendrick's Gin";
-brand2.appendChild(newItem);
+let newGin = document.createElement('div');
+newGin.id = 'item2';
+newGin.innerHTML = "Hendrick's Gin";
+let williamgrand = document.getElementById('brand2')
+williamgrand.appendChild(newGin);
 
 //7. Create a div element with the id of 'price2' and update the content to $34.99. Append this element to the Hendrick's Gin div.
-let newPrice2 = document.createElement('div');
-newPrice2.id = 'price2';
-newPrice2.innerHTML = '$34.99';
-newItem.appendChild(newPrice2);
+let ginPrice = document.createElement('div');
+ginPrice.id = 'price2';
+ginPrice.innerHTML = '$34.99';
+newGin.appendChild(ginPrice);
 
 //8. Create a button element with the id of 'discount3' and give it a content of 50% OFF Axe body soap!. Append this element to the appropriate div class 'block3.
 let newbutton = document.createElement('button');
@@ -124,3 +125,30 @@ stuffButton[5].innerHTML = 'No Discounts. This cutie is worth every penny!';
 
 //Final Boss 
 //Create your own product for the last three sections.
+let stuffPic = document.getElementsByTagName('img');
+stuffPic[10].src = 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS8WLYfBgFBhgIxIZQxxjyEt5gzOxfvui5_fKX6Y6Qi41S3Z3ZGRuCaBbAieoE15ZYfGqRQalt2u67zUmrcVJKZGRyzxYzipSt-rHznf3Y&usqp=CAE';
+stuffBrand[6].innerHTML = 'Heros Down Below INC';
+stuffitem[6].innerHTML = "saving the world never looked this good";
+stuffprice[6].innerHTML = '4 Pack, $5.99';
+stuffButton[6].innerHTML = 'Free model with purchase';
+
+stuffPic[11].src = 'https://aa1a5178aef33568e9c4-a77ea51e8d8892c1eb8348eb6b3663f6.ssl.cf5.rackcdn.com/p/full/4d9b53a8-65bd-4517-a06c-b61ea9c393e9.jpg';
+let finalBoss1 = document.getElementsByClassName('block2 col-sm-4');
+let sifBrand = document.createElement('div');
+sifBrand.className = 'brand';
+sifBrand.innerHTML = 'Darks Souls';
+finalBoss1[3].appendChild(sifBrand);
+let sifItem = document.createElement('div');
+sifItem.className = 'item';
+sifItem.innerHTML = 'Sif the good boi'
+finalBoss1[3].appendChild(sifItem);
+let sifPrice = document.createElement('div');
+sifPrice.className = 'price';
+sifPrice.innerHTML = '3 easy payments of $222';
+finalBoss1[3].appendChild(sifPrice);
+let sifButton = document.createElement('button');
+sifButton.className = 'discount';
+sifButton.innerHTML = 'Free trip back to the bonfire of your choice!';
+finalBoss1[3].appendChild(sifButton);
+
+stuffPic[12].src = 'https://pbs.twimg.com/media/D9C2ZYHX4AA1UeL.jpg:large';
