@@ -1,4 +1,4 @@
-//The entire dev nation is up in arms since our Ultimate Developer Gift Guide is not complete! Please use your DOM skills to help us complete this site and quash any uprising from this unruly group!
+//The entire dev nation is up in arms since our Ultimate Developer Gift Guide is not complete! Please use your DOM skills to help us complete this site and squash any uprising from this unruly group!
 
 //And don't forget, please feel free to reach out for help. There is such a thing as a DOM question...
 
@@ -6,15 +6,30 @@
 
 var finePrint = 'Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter.'
 
+let changeFinePrint = document.getElementById('disclaimer');
+changeFinePrint.innerHTML = finePrint;
+
 //2. Target the div elemenet with the id of 'brand1' and update the content to Nabisco.
+let cookies = document.getElementById('brand1');
+cookies.innerHTML = 'Nabisco';
 
 //3. Target the div element with the id of 'item1' and update the content with Cheeseburger Oreos. 
+let cheeseOreo = document.getElementById('item1');
+cheeseOreo.innerHTML = 'Cheeseburger Oreos';
 
 //4. Target the div element with the id of 'price1' and update the content to $8.99.
+let newPrice = document.getElementById('price1');
+newPrice.innerHTML = '$8.99';
 
 //5. Target the button element with the id of 'discount1' and update the content to Free fries with purchase!
+let discButton = document.getElementById('discount1');
+discButton.innerHTML = 'Free fries with purchase!';
 
 //6. Create a div element with the id of 'item2' and update the content to Hendrick's Gin. Append this element to William Grand & Sons div.
+let newItem = document.createElement('div');
+newItem.id = 'item2';
+newItem.innerHTML = "Hendrick's Gin";
+brand2.appendChild(newItem);
 
 //7. Create a div element with the id of 'price2' and update the content to $34.99. Append this element to the Hendrick's Gin div.
 
