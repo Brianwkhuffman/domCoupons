@@ -48,6 +48,14 @@ let panda = document.getElementsByClassName('item');
 panda[0].innerHTML = 'Orange Chicken';
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
+let pandadiscount = document.createElement('button');
+pandadiscount.className = 'discount';
+pandadiscount.innerHTML = 'Free T-shirt and fortune cookie with purchase!';
+let pandaprice = document.getElementsByClassName('price');
+pandaprice[0].appendChild(pandadiscount);
+//let rows = document.getElementsByClassName('block1 col-sm-4'); <- will grab the 'row blocks'
+//rows[1].appendChild(pandadiscount); <- index 1 is the second row, which panda is in
+
 
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
 
