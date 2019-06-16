@@ -151,4 +151,21 @@ sifButton.className = 'discount';
 sifButton.innerHTML = 'Free trip back to the bonfire of your choice!';
 finalBoss1[3].appendChild(sifButton);
 
-stuffPic[12].src = 'https://pbs.twimg.com/media/D9C2ZYHX4AA1UeL.jpg:large';
+stuffPic[12].src = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/1-gundam-mobile-suit-rx-78-2-statue-odaiba-tokyo-j-roald-nel.jpg';
+let finalBoss2 = document.getElementsByClassName('block3 col-sm-4')
+let gundamBrand =  document.createElement('div');
+gundamBrand.className = 'brand';
+gundamBrand.innerHTML = 'ガンダム';
+finalBoss2[3].appendChild(gundamBrand);
+let gundamItem = document.createElement('div');
+gundamItem.className = 'item';
+gundamItem.innerHTML = 'Full size RX-78 Gundam';
+finalBoss2[3].appendChild(gundamItem);
+let gundamPrice = document.createElement('div');
+gundamPrice.className = 'price';
+gundamPrice.innerHTML = '$5,000,000';
+finalBoss2[3].appendChild(gundamPrice);
+let gundamButton = document.createElement('button');
+gundamButton.className = 'discount';
+gundamButton.innerHTML = 'Includes: Beam sword and Rifle!';
+finalBoss2[3].appendChild(gundamButton);
